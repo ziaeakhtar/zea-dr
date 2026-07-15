@@ -34,47 +34,26 @@ your device and never leave it.</p>
 <h2>Microphone (Voice Translator)</h2>
 <p>The microphone is used only when you tap the mic in the Voice Translator,
 to convert your speech to text. Speech recognition is performed by your
-device's built-in speech service (Apple's Speech framework on iOS, the
-Google/OEM speech recognizer on Android). Depending on your device settings,
-that system service may process audio on-device or via its provider's
-servers — this is governed by Apple's or Google's privacy policy, not by us.
+device's built-in speech service. Depending on your device settings, that
+system service may process audio on-device or send it to its provider's
+servers — this is governed by your device maker's privacy policy, not by us.
 We never record, store, or transmit your audio ourselves.</p>
 
 <h2>Translation</h2>
-<p>Text translation runs <strong>entirely on your device</strong> using
-Google ML Kit. The text you translate is not sent to any server by us.
-Language models (~30 MB each) are downloaded from Google once per language
-and then work fully offline.</p>
+<p>Text translation runs <strong>entirely on your device</strong>. The text
+you translate is not sent to any server by us. Language models are
+downloaded once per language and then work fully offline.</p>
 
 <h2>Internet use</h2>
-<p>The App works fully offline for content you've already downloaded.
-It uses the internet only to:</p>
-<ul>
-  <li>download translation language models, one time per language, from Google;</li>
-  <li>load destination photos from Wikimedia Commons, cached on your device;</li>
-  <li>fetch currency exchange rates from a free public rate service
-    (<code>open.er-api.com</code>), cached on your device with a timestamp so
-    the converter keeps working offline from the last-known rates;</li>
-  <li>open Google Maps or your phone's dialer when you tap "Get Directions"
-    or an emergency helpline number;</li>
-  <li>check, about once a month, for new or updated destination guides
-    (see below).</li>
-</ul>
-<p>Loading a photo, fetching rates, opening Maps/dialer, or the monthly
-content check shares your IP address with those services in the normal way
-any web request does. We do not receive, log, or store your IP address or
-any other data from these requests, and no personal information is sent.</p>
-
-<h2>Destination content updates</h2>
-<p>Approximately once a month, the App quietly checks a public file hosted on
-GitHub for new or updated destination guides — the same original content
-format bundled with the App, refreshed without requiring an app update. This
-is a standard, anonymous HTTPS request; the file is encrypted in transit and
-at rest to deter scraping, not to hide anything from you. We do not receive,
-log, or store your IP address or any other data from this request, and no
-personal information is sent. If the check fails for any reason (offline, no
-new content yet), the App simply continues with the destinations already on
-your device.</p>
+<p>The App works fully offline for content you've already downloaded. It
+uses the internet only to download translation language models, load
+destination photos, fetch currency exchange rates (cached on your device so
+the converter keeps working offline), open Maps or your dialer when you tap
+"Get Directions" or a helpline number, and check about once a month for
+updated destination guides. These requests share your IP address with the
+relevant service in the normal way any web request does. We do not receive,
+log, or store your IP address or any other data ourselves, and no personal
+information is sent.</p>
 
 <h2>Children's privacy</h2>
 <p>The App is suitable for general audiences and does not knowingly collect
@@ -82,13 +61,10 @@ any data from anyone, including children.</p>
 
 <h2>Third-party services</h2>
 <p>We do not integrate any analytics SDKs or advertising. The external
-services the App talks to — Google ML Kit (translation models), your
-device's speech/TTS engine, Wikimedia Commons (photos), <code>open.er-api.com</code>
-(currency rates), Google Maps, and GitHub (content updates) — are each
-described above and are subject to their own providers' privacy practices.
-If a future version of the App adds new third-party services (for example,
-advertising), this policy and the App's store listing will be updated before
-that version is released.</p>
+services described above are subject to their own providers' privacy
+practices. If a future version of the App adds new third-party services (for
+example, advertising), this policy and the App's store listing will be
+updated before that version is released.</p>
 
 <h2>Travel &amp; safety disclaimer</h2>
 <p>Destination guides, currency rates, "good to know" travel tips, and
